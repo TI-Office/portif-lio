@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+        <h1>Meu Portfolio</h1>
+        <p class="lead">Olá, meu nome é [Luan Oliveira]. Eu sou um [Desenvolvedor Front end] com experiência em [habilidades]. Confira alguns dos meus trabalhos abaixo:</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio">
+        <h2>Portfólio</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="img/1.jpg" alt="Projeto Um" />
+            <h3>Projeto Um</h3>
+            <p>Descrição do Projeto Um</p>
+          </div>
+          <div class="card">
+            <img src="img/2.jpg" alt="Projeto Dois" />
+            <h3>Projeto Dois</h3>
+            <p>Descrição do Projeto Dois</p>
+          </div>
+          <div class="card">
+            <img src="img/3.jpg" alt="Projeto Três" />
+            <h3>Projeto Três</h3>
+            <p>Descrição do Projeto Três</p>
+          </div>
+          <div class="card">
+            <img src="img/4.jpg" alt="Projeto Quatro" />
+            <h3>Projeto Quatro</h3>
+            <p>Descrição do Projeto Quatro</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <h2>Sobre</h2>
+        <div class="container">
+          <p>Descrição sobre o profissional.</p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Contato</h2>
+        <div class="container">
+          <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Direitos Reservados. © [nome] [ano]</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
