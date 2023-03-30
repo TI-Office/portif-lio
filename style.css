@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+main{
+  padding: 10px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -29,27 +33,7 @@ header {
   background-size: cover;
   padding: 2rem 0;
 }
-
-nav ul {
-  list-style: none;
-  float: right;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 2rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-  color: #8369c0;
+;
 }
 
 h1 {
@@ -176,28 +160,63 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
+.menu-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 99999;
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 3rem;
+.menu {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: #333;
+  transition: height 0.3s;
+}
+
+.menu.show {
+  height: 100%;
+}
+
+.menu li {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #777;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
 
-  .lead {
-    font-size: 1.2rem;
+  .menu {
+    position: static;
+    height: auto;
+    background-color: transparent;
   }
 
-  form {
-    max-width: 100%;
-    padding: 0 1rem;
+  .menu li {
+    border-bottom: none;
+  }
+
+  .menu a {
+    color: #333;
   }
 }
