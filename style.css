@@ -69,8 +69,6 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
   grid-gap: 2rem;
-  padding: 0 2rem 0 2rem;
-  align-items: center;
 }
 
 .card {
