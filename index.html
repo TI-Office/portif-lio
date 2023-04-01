@@ -1,121 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-   
-    <link rel="stylesheet" href="style.css" />
-<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOUj4uW/aZ5g5srRWV+NoMn5uUvO3q+oqka6YW0j6AdiwU6" crossorigin="anonymous"/> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</head>
 
-  </head>
-  
-  <body>
-    <header>
-<div class="menu-toggle">
-  <i class="fas fa-bars"></i>
-</div>
+<body>
 
-<!-- Adicione a classe "menu" para a sua tag nav -->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark menu">
-  <!-- Marca -->
-  <a class="navbar-brand" href="#">Navbar</a>
+  <header>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div>
+      <!-- Adicione a classe "menu" para a sua tag nav -->
+      <nav class="navbar navbar-dark bg-dark fixed-top menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Botão de menu (hamburguer) -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <!-- Links do menu -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href=".portfolio">Projetos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href=".about">Sobre</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contato</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<br>
+  <main>
 
-  <div class="container">
-        
-        <h1>Meu Portfolio</h1>
-        <p class="lead">Olá, meu nome é Luan Oliveira. Eu sou um Desenvolvedor Front-end com experiência em Html, CSS e Javascript. Confira alguns dos meus trabalhos abaixo:</p>
+    <div class="container">
+
+      <h1>Meu Portfolio</h1>
+      <p class="lead">Olá, meu nome é Luan Oliveira. Eu sou um Desenvolvedor Front-end com experiência em Html, CSS e
+        Javascript. Confira alguns dos meus trabalhos abaixo:</p>
+    </div>
+    <section class="portfolio">
+      <h2>Projetos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="img1.png" alt="Projeto Um" />
+          <h3>Projeto calculadora</h3>
+          <p>Calculadora simples criada em HTML 5 CSS3 e Javascript</p>
+        </div>
+        <div class="card">
+          <img src="img1.png" alt="Projeto Dois" />
+          <h3>Projeto Dois</h3>
+          <p>Descrição do Projeto Dois</p>
+        </div>
+        <div class="card">
+          <img src="img1.png" alt="Projeto Três" />
+          <h3>Projeto Três</h3>
+          <p>Descrição do Projeto Três</p>
+        </div>
+        <div class="card">
+          <img src="img1.png" alt="Projeto Quatro" />
+          <h3>Projeto Quatro</h3>
+          <p>Descrição do Projeto Quatro</p>
+        </div>
       </div>
-      
-    </header>
+    </section>
 
-    <main>
-      <section class="portfolio">
-        <h2>Projetos</h2>
-        <div class="grid">
-          <div class="card">
-            <img src="img/1.jpg" alt="Projeto Um" />
-            <h3>Projeto calculadora</h3>
-            <p>Calculadora simples criada em HTML 5 CSS3 e Javascript</p>
-          </div>
-          <div class="card">
-            <img src="img/2.jpg" alt="Projeto Dois" />
-            <h3>Projeto Dois</h3>
-            <p>Descrição do Projeto Dois</p>
-          </div>
-          <div class="card">
-            <img src="img/3.jpg" alt="Projeto Três" />
-            <h3>Projeto Três</h3>
-            <p>Descrição do Projeto Três</p>
-          </div>
-          <div class="card">
-            <img src="img/4.jpg" alt="Projeto Quatro" />
-            <h3>Projeto Quatro</h3>
-            <p>Descrição do Projeto Quatro</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="about">
-        <h2>Sobre</h2>
-        <div class="container">
-          <p>Descrição sobre o profissional.</p>
-        </div>
-      </section>
-
-      <section class="contact">
-        <h2>Contato</h2>
-        <div class="container">
-          <form>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar Mensagem</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer>
+    <section class="about">
+      <h2>Sobre</h2>
       <div class="container">
-        <p>Direitos Reservados. © Luan Oliveira 2023</p>
+        <p>Descrição sobre o profissional.</p>
       </div>
-    </footer>
+    </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <section class="contact">
+      <h2>Contato</h2>
+      <div class="container">
+        <form>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-ova8mia/YDfNqd/WbByvFXTpZ9PCPnDQTWA3q3TthSm2PnT8YRm08kmvwjirWiE7" crossorigin="anonymous"></script>  
-    <script src="main.js"></script>
-  </body>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Direitos Reservados. © Luan Oliveira 2023</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
